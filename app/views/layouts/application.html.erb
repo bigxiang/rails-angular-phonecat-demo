@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html <%= @ng_app ? "ng-app=#{@ng_app}App" : '' %>>
+<head>
+  <title>RailsAngularPhonecat</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <% if @ng_app %>
+    <%= javascript_include_tag "angular/#{@ng_app}" %>
+  <% end %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>

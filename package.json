@@ -1,0 +1,9 @@
+{
+  "name": "rails-angular-phonecat",
+  "dependencies" : {
+    "karma": "^0.12.16",
+    "karma-jasmine": "^0.1.5",
+    "phantomjs": "1.9.7-14",
+    "karma-phantomjs-launcher": "~0.1"
+  }
+}
